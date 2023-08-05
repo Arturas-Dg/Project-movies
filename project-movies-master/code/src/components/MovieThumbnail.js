@@ -1,10 +1,10 @@
 import React from "react";
+import { MovieList } from "./MovieList";
 
-export const MovieThumbnail = (overview, vote_average, title) => {
+export const MovieThumbnail = ({ overview, title, vote_average }) => {
   return (
-    <section className="movie-thumb">
-      <h1>{title}</h1>
-      <div>{overview}</div>
+    <section className="movie-thumbnail">
+      <div>{title}</div>
       <div>{vote_average}</div>
     </section>
   );

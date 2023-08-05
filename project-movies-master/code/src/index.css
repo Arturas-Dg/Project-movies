@@ -14,11 +14,7 @@ code {
     monospace;
 }
 
-.button {
-  width: 100px;
-  height: 25px;
-  background-color:aquamarine;
-}
+.popular-movie-single{}
 
 .movie-image{
   width: 25%;
@@ -28,4 +24,8 @@ code {
 
 .movie-image:hover {
   opacity: 50%;
+}
+
+.movie-thumbnail {
+
 }

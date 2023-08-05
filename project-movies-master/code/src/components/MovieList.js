@@ -20,13 +20,13 @@ export const MovieList = () => {
   return (
     <section className="popular-movie-list">
       {movies.map((movie) => (
-        <>
+        <div className="popular-movie-single">
           <img
             className="movie-image"
             key={movie.id}
             src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}></img>
           <MovieThumbnail {...movie} />
-        </>
+        </div>
       ))}
     </section>
   );
