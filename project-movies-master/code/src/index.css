@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.button {
+  width: 100px;
+  height: 25px;
+  background-color:aquamarine;
+}
+
+.movie-image{
+  width: 25%;
+  height: 37.5%;
+  aspect-ratio: 2/3;
+}
+
+.movie-image:hover {
+  opacity: 50%;
 }

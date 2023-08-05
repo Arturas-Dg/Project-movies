@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+
+import { MovieList } from "./components/MovieList";
 
 export const App = () => {
-  return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  );
-}
+  return <MovieList />;
+};
