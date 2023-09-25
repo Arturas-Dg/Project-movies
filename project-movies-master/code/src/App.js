@@ -1,7 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { MovieList } from "./components/MovieList";
+import { MovieDetail } from "pages/MovieDetails";
 
 export const App = () => {
-  return <MovieList />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MovieList />} />
+        <Route path="/movies/:slug" element={<MovieDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
+  return;
 };
